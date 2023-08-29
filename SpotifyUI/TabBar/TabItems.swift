@@ -5,4 +5,10 @@
 //  Created by Dinara on 29.08.2023.
 //
 
-import Foundation
+import UIKit
+
+enum TabItems: Int {
+    case home
+    case search
+    case library 
+}

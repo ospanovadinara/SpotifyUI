@@ -12,6 +12,16 @@
 		270983E62A9E3445003AF729 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270983E52A9E3445003AF729 /* ViewController.swift */; };
 		270983EB2A9E3446003AF729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 270983EA2A9E3446003AF729 /* Assets.xcassets */; };
 		270983EE2A9E3446003AF729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 270983EC2A9E3446003AF729 /* LaunchScreen.storyboard */; };
+		270983F92A9E37E8003AF729 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270983F82A9E37E8003AF729 /* TabBarController.swift */; };
+		270983FC2A9E3B32003AF729 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 270983FB2A9E3B32003AF729 /* SnapKit */; };
+		270983FE2A9E3BC0003AF729 /* TabItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270983FD2A9E3BC0003AF729 /* TabItems.swift */; };
+		270984012A9E3CF8003AF729 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270984002A9E3CF8003AF729 /* AppImage.swift */; };
+		270984032A9E3D09003AF729 /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270984022A9E3D09003AF729 /* AppColor.swift */; };
+		270984052A9E3D14003AF729 /* AppFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270984042A9E3D14003AF729 /* AppFont.swift */; };
+		2709840B2A9E4088003AF729 /* Avenirnextcyr-Demi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270984072A9E4088003AF729 /* Avenirnextcyr-Demi.ttf */; };
+		2709840C2A9E4088003AF729 /* Avenirnextcyr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270984082A9E4088003AF729 /* Avenirnextcyr-Regular.ttf */; };
+		2709840D2A9E4088003AF729 /* Avenirnextcyr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270984092A9E4088003AF729 /* Avenirnextcyr-Bold.ttf */; };
+		2709840E2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2709840A2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,15 @@
 		270983EA2A9E3446003AF729 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		270983ED2A9E3446003AF729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		270983EF2A9E3446003AF729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		270983F82A9E37E8003AF729 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		270983FD2A9E3BC0003AF729 /* TabItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabItems.swift; sourceTree = "<group>"; };
+		270984002A9E3CF8003AF729 /* AppImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
+		270984022A9E3D09003AF729 /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		270984042A9E3D14003AF729 /* AppFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
+		270984072A9E4088003AF729 /* Avenirnextcyr-Demi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Demi.ttf"; sourceTree = "<group>"; };
+		270984082A9E4088003AF729 /* Avenirnextcyr-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Regular.ttf"; sourceTree = "<group>"; };
+		270984092A9E4088003AF729 /* Avenirnextcyr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Bold.ttf"; sourceTree = "<group>"; };
+		2709840A2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270983FC2A9E3B32003AF729 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +76,8 @@
 			children = (
 				270983F52A9E347E003AF729 /* Application */,
 				270983F62A9E3489003AF729 /* SupportingFiles */,
+				270983FF2A9E3CD7003AF729 /* UIResources */,
+				270983F72A9E379B003AF729 /* TabBar */,
 				270983E52A9E3445003AF729 /* ViewController.swift */,
 			);
 			path = SpotifyUI;
@@ -80,6 +102,37 @@
 			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
+		270983F72A9E379B003AF729 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				270983FD2A9E3BC0003AF729 /* TabItems.swift */,
+				270983F82A9E37E8003AF729 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		270983FF2A9E3CD7003AF729 /* UIResources */ = {
+			isa = PBXGroup;
+			children = (
+				270984062A9E403C003AF729 /* Font */,
+				270984002A9E3CF8003AF729 /* AppImage.swift */,
+				270984022A9E3D09003AF729 /* AppColor.swift */,
+				270984042A9E3D14003AF729 /* AppFont.swift */,
+			);
+			path = UIResources;
+			sourceTree = "<group>";
+		};
+		270984062A9E403C003AF729 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				270984092A9E4088003AF729 /* Avenirnextcyr-Bold.ttf */,
+				270984072A9E4088003AF729 /* Avenirnextcyr-Demi.ttf */,
+				2709840A2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf */,
+				270984082A9E4088003AF729 /* Avenirnextcyr-Regular.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -96,6 +149,9 @@
 			dependencies = (
 			);
 			name = SpotifyUI;
+			packageProductDependencies = (
+				270983FB2A9E3B32003AF729 /* SnapKit */,
+			);
 			productName = SpotifyUI;
 			productReference = 270983DE2A9E3445003AF729 /* SpotifyUI.app */;
 			productType = "com.apple.product-type.application";
@@ -124,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 270983D52A9E3445003AF729;
+			packageReferences = (
+				270983FA2A9E3B32003AF729 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 270983DF2A9E3445003AF729 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				270983EE2A9E3446003AF729 /* LaunchScreen.storyboard in Resources */,
+				2709840D2A9E4088003AF729 /* Avenirnextcyr-Bold.ttf in Resources */,
+				2709840E2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf in Resources */,
+				2709840B2A9E4088003AF729 /* Avenirnextcyr-Demi.ttf in Resources */,
+				2709840C2A9E4088003AF729 /* Avenirnextcyr-Regular.ttf in Resources */,
 				270983EB2A9E3446003AF729 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -150,9 +213,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				270984052A9E3D14003AF729 /* AppFont.swift in Sources */,
 				270983E62A9E3445003AF729 /* ViewController.swift in Sources */,
+				270983F92A9E37E8003AF729 /* TabBarController.swift in Sources */,
 				270983E22A9E3445003AF729 /* AppDelegate.swift in Sources */,
+				270984032A9E3D09003AF729 /* AppColor.swift in Sources */,
+				270983FE2A9E3BC0003AF729 /* TabItems.swift in Sources */,
 				270983E42A9E3445003AF729 /* SceneDelegate.swift in Sources */,
+				270984012A9E3CF8003AF729 /* AppImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +436,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		270983FA2A9E3B32003AF729 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		270983FB2A9E3B32003AF729 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 270983FA2A9E3B32003AF729 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 270983D62A9E3445003AF729 /* Project object */;
 }
