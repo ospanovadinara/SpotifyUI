@@ -29,5 +29,10 @@ extension AppImageProtocol {
 }
 
 enum AppImage: String, AppImageProtocol {
-    case logo
+    case homeIcon = "home_icon"
+    case libraryIcon = "library_icon"
+    case searchIcon = "search_icon"
+    case homeIconSelected = "home_icon_selected"
+    case librarySelected = "library_selected"
+    case searchIconSelected = "search_icon_selected"
 }

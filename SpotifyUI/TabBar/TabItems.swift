@@ -10,5 +10,5 @@ import UIKit
 enum TabItems: Int {
     case home
     case search
-    case library 
+    case library
 }
