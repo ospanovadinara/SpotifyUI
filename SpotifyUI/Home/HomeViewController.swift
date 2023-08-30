@@ -24,9 +24,11 @@ class HomeViewController: UIViewController {
             PlaylistsCell.self,
             forCellWithReuseIdentifier: PlaylistsCell.cellID
         )
-        collectionView.register(MainHeaderView.self,
-                                forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-                                withReuseIdentifier: MainHeaderView.cellID)
+        collectionView.register(
+            MainHeaderView.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: MainHeaderView.cellID
+        )
 
 
         return collectionView
@@ -128,11 +130,13 @@ extension HomeViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return CompositionalModel.modelsArray.count
     }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
         return CompositionalModel.modelsArray[section].count
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    func collectionView(_ collectionView: UICollectionView,
+                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
         case 0:
             guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: PlaylistsCell.cellID,
@@ -169,7 +173,7 @@ extension HomeViewController: UICollectionViewDataSource {
 
         default:
             guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
-                                                                         withReuseIdentifier: MainHeaderView.cellID,
+                                                                               withReuseIdentifier: MainHeaderView.cellID,
                                                                                for: indexPath) as? MainHeaderView else {
                 fatalError("Could not cast to MainHeaderView")
             }
