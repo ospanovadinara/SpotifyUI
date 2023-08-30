@@ -29,4 +29,5 @@ enum AppColor: String, AppColorProtocol {
     case darkGray = "dark_gray"
     case lightGray = "light_gray"
     case inactive = "tab_bar_inactive"
+    case darkGrayTwo = "dark_gray_two"
 }

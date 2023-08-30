@@ -32,10 +32,24 @@ enum AppImage: String, AppImageProtocol {
     case homeIcon = "home_icon"
     case libraryIcon = "library_icon"
     case searchIcon = "search_icon"
+
     case homeIconSelected = "home_icon_selected"
     case librarySelected = "library_selected"
     case searchIconSelected = "search_icon_selected"
+
     case notification = "notification_button"
     case recents = "recents_button"
     case settings = "settings_button"
+
+    case playlistOne = "playlist_one"
+    case playlistTwo = "playlist_two"
+    case playlistThree = "playlist_three"
+    case playlistFour = "playlist_four"
+    case playlistFive = "playlist_five"
+    case playlistSix = "playlist_six"
+
+    case albumOne = "album_one"
+    case albumTwo = "album_two"
+    case albumThree = "album_three"
+    case albumFour = "album_four"
 }
