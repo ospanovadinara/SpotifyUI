@@ -7,16 +7,13 @@
 
 import UIKit
 
-
 class TabBarController: UITabBarController {
-
-    // MARK: - UI
 
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupViews()
-        setupConstraints()
+
+        configureTabBar()
     }
 
     // MARK: - Layout Subviews
@@ -25,14 +22,30 @@ class TabBarController: UITabBarController {
 
     }
 
-    // MARK: - Setup Views
-    private func setupViews() {
-
+    // MARK: - Configure Tab Item
+    private func setTabItem(for type: TabItems) -> UITabBarItem {
+        let item = UITabBarItem(title: type.title,
+                                image: type.icon,
+                                selectedImage: type.selectedIcon)
+        return item
     }
 
-    // MARK: - Setup Constraints
+    // MARK: - Configure Tab Bar
+    private func configureTabBar() {
+        view.backgroundColor = AppColor.black.uiColor
 
-    private func setupConstraints() {
+        let home = UINavigationController(rootViewController: HomeViewController())
+        let search = UINavigationController(rootViewController: HomeViewController())
+        let library = UINavigationController(rootViewController: HomeViewController())
 
+        home.tabBarItem = setTabItem(for: .home)
+        search.tabBarItem = setTabItem(for: .search)
+        library.tabBarItem = setTabItem(for: .library)
+
+        setViewControllers([
+            home,
+            search,
+            library
+        ], animated: true)
     }
 }

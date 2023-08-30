@@ -35,4 +35,7 @@ enum AppImage: String, AppImageProtocol {
     case homeIconSelected = "home_icon_selected"
     case librarySelected = "library_selected"
     case searchIconSelected = "search_icon_selected"
+    case notification = "notification_button"
+    case recents = "recents_button"
+    case settings = "settings_button"
 }
