@@ -80,13 +80,12 @@ class MainHeaderView: UICollectionReusableView {
     // MARK: - Setup Constraints
     private func setupConstraints() {
         containerView.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(10)
-            make.left.trailing.bottom.equalTo(self)
+            make.top.left.trailing.bottom.equalTo(self)
         }
 
         title.snp.makeConstraints { make in
             make.top.bottom.equalTo(self)
-            make.leading.equalTo(containerView.snp.leading).offset(10)
+            make.leading.equalTo(containerView.snp.leading).offset(6)
         }
         stackView.snp.makeConstraints { make in
             make.top.trailing.bottom.equalTo(containerView)

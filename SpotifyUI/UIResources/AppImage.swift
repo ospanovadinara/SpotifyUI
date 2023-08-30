@@ -52,4 +52,8 @@ enum AppImage: String, AppImageProtocol {
     case albumTwo = "album_two"
     case albumThree = "album_three"
     case albumFour = "album_four"
+
+    case mixOne = "mix_one"
+    case mixTwo = "mix_two"
+    case mixThree = "mix_three"
 }

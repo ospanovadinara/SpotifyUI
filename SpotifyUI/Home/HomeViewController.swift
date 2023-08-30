@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class HomeViewController: UIViewController {
 
@@ -21,15 +22,23 @@ class HomeViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(
-            PlaylistsCell.self,
-            forCellWithReuseIdentifier: PlaylistsCell.cellID
-        )
-        collectionView.register(
             MainHeaderView.self,
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
             withReuseIdentifier: MainHeaderView.cellID
         )
-
+        collectionView.register(
+            PlaylistsCell.self,
+            forCellWithReuseIdentifier: PlaylistsCell.cellID
+        )
+        collectionView.register(
+            MixesCell.self,
+            forCellWithReuseIdentifier: MixesCell.cellID
+        )
+        collectionView.register(
+            GeneralHeaderView.self,
+            forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+            withReuseIdentifier: GeneralHeaderView.cellID
+        )
 
         return collectionView
     }()
@@ -47,7 +56,6 @@ class HomeViewController: UIViewController {
     }
 
     // MARK: - Setup Constraints
-
     private func setupConstraints() {
         collectionView.snp.makeConstraints { make in
             make.edges.equalToSuperview()
@@ -79,12 +87,56 @@ class HomeViewController: UIViewController {
                 )
 
                 let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
-                layoutSection.contentInsets = NSDirectionalEdgeInsets.zero
+                layoutSection.contentInsets = NSDirectionalEdgeInsets(top: 0,
+                                                                      leading: 0,
+                                                                      bottom: 23,
+                                                                      trailing: 0)
                 layoutSection.orthogonalScrollingBehavior = .continuous
 
                 let layoutSectionHeaderSize = NSCollectionLayoutSize(
                     widthDimension: .fractionalWidth(1),
                     heightDimension: .estimated(43)
+                )
+                let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                    layoutSize: layoutSectionHeaderSize,
+                    elementKind: UICollectionView.elementKindSectionHeader,
+                    alignment: .top
+                )
+                layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
+                layoutSectionHeader.contentInsets = NSDirectionalEdgeInsets.zero
+
+                return layoutSection
+
+            case 1:
+                let itemSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .fractionalHeight(1)
+                )
+                let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+                layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0,
+                                                                   leading: 6,
+                                                                   bottom: 0,
+                                                                   trailing: 10)
+
+                let groupSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(0.33),
+                    heightDimension: .estimated(165)
+                )
+                let layoutGroup = NSCollectionLayoutGroup.horizontal(
+                    layoutSize: groupSize,
+                    subitems: [layoutItem, layoutItem, layoutItem]
+                )
+
+                let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+                layoutSection.contentInsets = NSDirectionalEdgeInsets(top: 10,
+                                                                      leading: 0,
+                                                                      bottom: 13,
+                                                                      trailing: 0)
+                layoutSection.orthogonalScrollingBehavior = .continuous
+
+                let layoutSectionHeaderSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .estimated(27)
                 )
                 let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
                     layoutSize: layoutSectionHeaderSize,
@@ -147,6 +199,15 @@ extension HomeViewController: UICollectionViewDataSource {
 
             return item
 
+        case 1:
+            guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: MixesCell.cellID,
+                                                                for: indexPath) as? MixesCell else {
+                fatalError("Could not cast to MixesCell")
+            }
+            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+
+            return item
+
         default:
             guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: PlaylistsCell.cellID,
                                                                 for: indexPath) as? PlaylistsCell else {
@@ -169,6 +230,15 @@ extension HomeViewController: UICollectionViewDataSource {
                 fatalError("Could not cast to MainHeaderView")
             }
             header.title.text = "Good Evening"
+            return header
+
+        case 1:
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                         withReuseIdentifier: GeneralHeaderView.cellID,
+                                                                               for: indexPath) as? GeneralHeaderView else {
+                fatalError("Could not cast to GeneralHeaderView")
+            }
+            header.title.text = "Made For You"
             return header
 
         default:

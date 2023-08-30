@@ -34,5 +34,15 @@ extension CompositionalModel {
                             subtitle: nil,
                             image: AppImage.playlistSix.uiImage!)
         ],
+        [CompositionalModel(title: "Jhene Aiko, Jorja Smith and more",
+                            subtitle: nil,
+                            image: AppImage.mixOne.uiImage!),
+         CompositionalModel(title: "Drake, Giveon and more",
+                            subtitle: nil,
+                            image: AppImage.mixTwo.uiImage!),
+         CompositionalModel(title: "Kehlani, Rihanna and more",
+                            subtitle: nil,
+                            image: AppImage.mixThree.uiImage!),
+         ]
     ]
 }
