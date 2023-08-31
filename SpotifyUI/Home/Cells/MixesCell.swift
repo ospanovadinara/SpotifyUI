@@ -21,7 +21,7 @@ class MixesCell: UICollectionViewCell {
 
     private lazy var label: UILabel = {
         let label = UILabel()
-        label.textColor = AppColor.lightGray.uiColor
+        label.textColor = AppColor.gray02.uiColor
         label.font = AppFont.demi.s12()
         label.numberOfLines = 0
         return label
@@ -59,7 +59,7 @@ class MixesCell: UICollectionViewCell {
         }
     }
 
-    func configuration(model: CompositionalModel) {
+    func configuration(model: HomeCompositionalModel) {
         self.imageView.image = model.image
         self.label.text = model.title
     }

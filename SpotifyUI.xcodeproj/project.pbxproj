@@ -22,7 +22,7 @@
 		2709840C2A9E4088003AF729 /* Avenirnextcyr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270984082A9E4088003AF729 /* Avenirnextcyr-Regular.ttf */; };
 		2709840D2A9E4088003AF729 /* Avenirnextcyr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270984092A9E4088003AF729 /* Avenirnextcyr-Bold.ttf */; };
 		2709840E2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2709840A2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf */; };
-		273D30442A9F8AF400FA2962 /* CompositionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30432A9F8AF400FA2962 /* CompositionalModel.swift */; };
+		273D30442A9F8AF400FA2962 /* HomeCompositionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30432A9F8AF400FA2962 /* HomeCompositionalModel.swift */; };
 		273D30462A9F8F8700FA2962 /* PlaylistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30452A9F8F8700FA2962 /* PlaylistsCell.swift */; };
 		273D30482A9F91D900FA2962 /* MixesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30472A9F91D900FA2962 /* MixesCell.swift */; };
 		273D304A2A9FA72700FA2962 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30492A9FA72700FA2962 /* MainHeaderView.swift */; };
@@ -30,6 +30,12 @@
 		277221702AA07EBF00A509B7 /* ArtistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772216F2AA07EBF00A509B7 /* ArtistsCell.swift */; };
 		277221722AA08A2600A509B7 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221712AA08A2600A509B7 /* AlbumsCell.swift */; };
 		277221742AA08D1700A509B7 /* PopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221732AA08D1700A509B7 /* PopCell.swift */; };
+		277221782AA0959C00A509B7 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221772AA0959C00A509B7 /* LibraryViewController.swift */; };
+		2772217A2AA095F700A509B7 /* LibraryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221792AA095F700A509B7 /* LibraryHeaderView.swift */; };
+		2772217E2AA09C4000A509B7 /* LibraryCompositionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772217D2AA09C4000A509B7 /* LibraryCompositionalModel.swift */; };
+		277221802AA09D6000A509B7 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772217F2AA09D6000A509B7 /* CategoriesCell.swift */; };
+		277221822AA0A73000A509B7 /* LibraryGeneralHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221812AA0A73000A509B7 /* LibraryGeneralHeader.swift */; };
+		277221842AA0AA5800A509B7 /* RecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221832AA0AA5800A509B7 /* RecentsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +55,7 @@
 		270984082A9E4088003AF729 /* Avenirnextcyr-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Regular.ttf"; sourceTree = "<group>"; };
 		270984092A9E4088003AF729 /* Avenirnextcyr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Bold.ttf"; sourceTree = "<group>"; };
 		2709840A2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Medium.ttf"; sourceTree = "<group>"; };
-		273D30432A9F8AF400FA2962 /* CompositionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalModel.swift; sourceTree = "<group>"; };
+		273D30432A9F8AF400FA2962 /* HomeCompositionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCompositionalModel.swift; sourceTree = "<group>"; };
 		273D30452A9F8F8700FA2962 /* PlaylistsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsCell.swift; sourceTree = "<group>"; };
 		273D30472A9F91D900FA2962 /* MixesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixesCell.swift; sourceTree = "<group>"; };
 		273D30492A9FA72700FA2962 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
@@ -57,6 +63,12 @@
 		2772216F2AA07EBF00A509B7 /* ArtistsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsCell.swift; sourceTree = "<group>"; };
 		277221712AA08A2600A509B7 /* AlbumsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
 		277221732AA08D1700A509B7 /* PopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCell.swift; sourceTree = "<group>"; };
+		277221772AA0959C00A509B7 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		277221792AA095F700A509B7 /* LibraryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryHeaderView.swift; sourceTree = "<group>"; };
+		2772217D2AA09C4000A509B7 /* LibraryCompositionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCompositionalModel.swift; sourceTree = "<group>"; };
+		2772217F2AA09D6000A509B7 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
+		277221812AA0A73000A509B7 /* LibraryGeneralHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryGeneralHeader.swift; sourceTree = "<group>"; };
+		277221832AA0AA5800A509B7 /* RecentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,7 +175,7 @@
 		2772216C2AA07D1C00A509B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				273D30432A9F8AF400FA2962 /* CompositionalModel.swift */,
+				273D30432A9F8AF400FA2962 /* HomeCompositionalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -172,8 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				273D30492A9FA72700FA2962 /* MainHeaderView.swift */,
-				273D30452A9F8F8700FA2962 /* PlaylistsCell.swift */,
 				273D304B2A9FC3E500FA2962 /* GeneralHeaderView.swift */,
+				273D30452A9F8F8700FA2962 /* PlaylistsCell.swift */,
 				277221732AA08D1700A509B7 /* PopCell.swift */,
 				273D30472A9F91D900FA2962 /* MixesCell.swift */,
 				2772216F2AA07EBF00A509B7 /* ArtistsCell.swift */,
@@ -193,8 +205,38 @@
 		277221752AA094F400A509B7 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				2772217C2AA09C2B00A509B7 /* Model */,
+				2772217B2AA095FF00A509B7 /* Cells */,
+				277221762AA0958500A509B7 /* Controller */,
 			);
 			path = Library;
+			sourceTree = "<group>";
+		};
+		277221762AA0958500A509B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				277221772AA0959C00A509B7 /* LibraryViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2772217B2AA095FF00A509B7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				277221792AA095F700A509B7 /* LibraryHeaderView.swift */,
+				277221812AA0A73000A509B7 /* LibraryGeneralHeader.swift */,
+				2772217F2AA09D6000A509B7 /* CategoriesCell.swift */,
+				277221832AA0AA5800A509B7 /* RecentsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2772217C2AA09C2B00A509B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2772217D2AA09C4000A509B7 /* LibraryCompositionalModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,17 +323,23 @@
 				270984052A9E3D14003AF729 /* AppFont.swift in Sources */,
 				273D30482A9F91D900FA2962 /* MixesCell.swift in Sources */,
 				273D304C2A9FC3E500FA2962 /* GeneralHeaderView.swift in Sources */,
+				2772217A2AA095F700A509B7 /* LibraryHeaderView.swift in Sources */,
+				277221802AA09D6000A509B7 /* CategoriesCell.swift in Sources */,
 				270983E62A9E3445003AF729 /* HomeViewController.swift in Sources */,
 				277221722AA08A2600A509B7 /* AlbumsCell.swift in Sources */,
 				270983F92A9E37E8003AF729 /* TabBarController.swift in Sources */,
 				277221742AA08D1700A509B7 /* PopCell.swift in Sources */,
+				277221782AA0959C00A509B7 /* LibraryViewController.swift in Sources */,
 				273D304A2A9FA72700FA2962 /* MainHeaderView.swift in Sources */,
 				273D30462A9F8F8700FA2962 /* PlaylistsCell.swift in Sources */,
 				270983E22A9E3445003AF729 /* AppDelegate.swift in Sources */,
+				277221822AA0A73000A509B7 /* LibraryGeneralHeader.swift in Sources */,
 				270984032A9E3D09003AF729 /* AppColor.swift in Sources */,
 				270983FE2A9E3BC0003AF729 /* TabItems.swift in Sources */,
 				270983E42A9E3445003AF729 /* SceneDelegate.swift in Sources */,
-				273D30442A9F8AF400FA2962 /* CompositionalModel.swift in Sources */,
+				277221842AA0AA5800A509B7 /* RecentsCell.swift in Sources */,
+				273D30442A9F8AF400FA2962 /* HomeCompositionalModel.swift in Sources */,
+				2772217E2AA09C4000A509B7 /* LibraryCompositionalModel.swift in Sources */,
 				270984012A9E3CF8003AF729 /* AppImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

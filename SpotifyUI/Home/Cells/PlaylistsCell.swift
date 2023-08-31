@@ -13,6 +13,7 @@ class PlaylistsCell: UICollectionViewCell {
     // MARK: - Cell Identifier
     public static let cellID = String(describing: PlaylistsCell.self)
 
+    // MARK: - UI
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -47,7 +48,7 @@ class PlaylistsCell: UICollectionViewCell {
 
     // MARK: - Setup Views
     private func setupViews() {
-        contentView.backgroundColor = AppColor.darkGray.uiColor
+        contentView.backgroundColor = AppColor.gray01.uiColor
         [imageView,
          playlistLabel].forEach { contentView.addSubview($0) }
     }
@@ -65,7 +66,7 @@ class PlaylistsCell: UICollectionViewCell {
         }
     }
 
-    func configuration(model: CompositionalModel) {
+    func configuration(model: HomeCompositionalModel) {
         self.imageView.image = model.image
         self.playlistLabel.text = model.title
     }

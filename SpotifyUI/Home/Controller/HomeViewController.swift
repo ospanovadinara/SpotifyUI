@@ -315,11 +315,11 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return CompositionalModel.modelsArray.count
+        return HomeCompositionalModel.modelsArray.count
     }
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
-        return CompositionalModel.modelsArray[section].count
+        return HomeCompositionalModel.modelsArray[section].count
     }
 
     func collectionView(_ collectionView: UICollectionView,
@@ -330,7 +330,7 @@ extension HomeViewController: UICollectionViewDataSource {
                                                                 for: indexPath) as? PlaylistsCell else {
                 fatalError("Could not cast to PlaylistsCell")
             }
-            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+            item.configuration(model: HomeCompositionalModel.modelsArray[indexPath.section][indexPath.item])
 
             return item
 
@@ -339,7 +339,7 @@ extension HomeViewController: UICollectionViewDataSource {
                                                                 for: indexPath) as? MixesCell else {
                 fatalError("Could not cast to MixesCell")
             }
-            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+            item.configuration(model: HomeCompositionalModel.modelsArray[indexPath.section][indexPath.item])
 
             return item
 
@@ -348,7 +348,7 @@ extension HomeViewController: UICollectionViewDataSource {
                                                                 for: indexPath) as? MixesCell else {
                 fatalError("Could not cast to MixesCell")
             }
-            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+            item.configuration(model: HomeCompositionalModel.modelsArray[indexPath.section][indexPath.item])
 
             return item
 
@@ -357,7 +357,7 @@ extension HomeViewController: UICollectionViewDataSource {
                                                                 for: indexPath) as? ArtistsCell else {
                 fatalError("Could not cast to ArtistsCell")
             }
-            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+            item.configuration(model: HomeCompositionalModel.modelsArray[indexPath.section][indexPath.item])
 
             return item
 
@@ -366,7 +366,7 @@ extension HomeViewController: UICollectionViewDataSource {
                                                                 for: indexPath) as? AlbumsCell else {
                 fatalError("Could not cast to AlbumsCell")
             }
-            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+            item.configuration(model: HomeCompositionalModel.modelsArray[indexPath.section][indexPath.item])
 
             return item
 
@@ -375,7 +375,7 @@ extension HomeViewController: UICollectionViewDataSource {
                                                                 for: indexPath) as? PlaylistsCell else {
                 fatalError("Could not cast to PlaylistsCell")
             }
-            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+            item.configuration(model: HomeCompositionalModel.modelsArray[indexPath.section][indexPath.item])
             return item
         }
     }

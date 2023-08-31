@@ -71,4 +71,13 @@ enum AppImage: String, AppImageProtocol {
     case popThree = "pop_three"
     case popFour = "pop_four"
     case popFive = "pop_five"
+
+    case profleButton = "profle_button"
+    case addButton = "add_button"
+    case searchButton = "search_button"
+
+    case filterButton = "recents_arrow_button"
+    case groupButton = "group_button"
+    case recentsOne = "recents_one"
+    case recentsTwo = "recents_two"
 }

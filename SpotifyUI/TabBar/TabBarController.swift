@@ -36,7 +36,7 @@ class TabBarController: UITabBarController {
 
         let home = UINavigationController(rootViewController: HomeViewController())
         let search = UINavigationController(rootViewController: HomeViewController())
-        let library = UINavigationController(rootViewController: HomeViewController())
+        let library = UINavigationController(rootViewController: LibraryViewController())
 
         home.tabBarItem = setTabItem(for: .home)
         search.tabBarItem = setTabItem(for: .search)

@@ -24,7 +24,6 @@ class GeneralHeaderView: UICollectionReusableView {
     // MARK: - Lifecycle
     override init(frame: CGRect) {
         super.init(frame: frame)
-        clipsToBounds = true
         setupViews()
         setupConstraints()
     }

@@ -1,5 +1,5 @@
 //
-//  AlbumsCell.swift
+//  RecentsCell.swift
 //  SpotifyUI
 //
 //  Created by Dinara on 31.08.2023.
@@ -8,30 +8,31 @@
 import UIKit
 import SnapKit
 
-class AlbumsCell: UICollectionViewCell {
+class RecentsCell: UICollectionViewCell {
 
     // MARK: - Cell Identifier
-    public static let cellID = String(describing: AlbumsCell.self)
+    public static let cellID = String(describing: RecentsCell.self)
 
+    // MARK: - UI
     private lazy var imageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
         return imageView
     }()
 
-    private lazy var label: UILabel = {
+    private lazy var recentsTitle: UILabel = {
         let label = UILabel()
         label.textColor = AppColor.white.uiColor
-        label.font = AppFont.demi.s12()
+        label.font = AppFont.demi.s15()
         label.textAlignment = .left
         label.numberOfLines = 0
         return label
     }()
 
-    private lazy var subtitle: UILabel = {
+    private lazy var recentsSubtitle: UILabel = {
         let label = UILabel()
         label.textColor = AppColor.gray02.uiColor
-        label.font = AppFont.demi.s10()
+        label.font = AppFont.medium.s13()
         label.textAlignment = .left
         label.numberOfLines = 0
         return label
@@ -40,7 +41,7 @@ class AlbumsCell: UICollectionViewCell {
     private lazy var stackView: UIStackView = {
         let stackView = UIStackView()
         stackView.axis = .vertical
-        stackView.spacing = 3
+        stackView.spacing = 4
         return stackView
     }()
 
@@ -59,8 +60,8 @@ class AlbumsCell: UICollectionViewCell {
     private func setupViews() {
         contentView.backgroundColor = .clear
 
-        [label,
-         subtitle].forEach { stackView.addArrangedSubview($0) }
+        [recentsTitle,
+         recentsSubtitle].forEach { stackView.addArrangedSubview($0) }
 
         [imageView,
          stackView].forEach { contentView.addSubview($0) }
@@ -69,26 +70,26 @@ class AlbumsCell: UICollectionViewCell {
     // MARK: - Setup Constraints
     private func setupConstraints() {
         imageView.snp.makeConstraints { make in
-            make.top.left.right.equalTo(contentView)
+            make.top.left.bottom.equalToSuperview()
             make.width.equalTo(imageView.snp.height)
         }
 
         stackView.snp.makeConstraints { make in
-            make.top.equalTo(imageView.snp.bottom).offset(9)
-            make.left.right.equalTo(contentView)
+            make.leading.equalTo(imageView.snp.trailing).offset(14)
+            make.centerY.equalToSuperview()
         }
     }
 
-    func configuration(model: HomeCompositionalModel) {
+    func configuration(model: LibraryCompositionalModel) {
         self.imageView.image = model.image
-        self.label.text = model.title
-        self.subtitle.text = model.subtitle
+        self.recentsTitle.text = model.title
+        self.recentsSubtitle.text = model.subtitle
     }
 
     override func prepareForReuse() {
         super.prepareForReuse()
         self.imageView.image = nil
-        self.label.text = nil
-        self.subtitle.text = nil
+        self.recentsTitle.text = nil
+        self.recentsSubtitle.text = nil
     }
 }
