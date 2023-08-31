@@ -31,6 +31,10 @@ class HomeViewController: UIViewController {
             forCellWithReuseIdentifier: PlaylistsCell.cellID
         )
         collectionView.register(
+            PopCell.self,
+            forCellWithReuseIdentifier: PopCell.cellID
+        )
+        collectionView.register(
             MixesCell.self,
             forCellWithReuseIdentifier: MixesCell.cellID
         )
@@ -38,6 +42,14 @@ class HomeViewController: UIViewController {
             GeneralHeaderView.self,
             forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
             withReuseIdentifier: GeneralHeaderView.cellID
+        )
+        collectionView.register(
+            ArtistsCell.self,
+            forCellWithReuseIdentifier: ArtistsCell.cellID
+        )
+        collectionView.register(
+            AlbumsCell.self,
+            forCellWithReuseIdentifier: AlbumsCell.cellID
         )
 
         return collectionView
@@ -148,6 +160,129 @@ class HomeViewController: UIViewController {
 
                 return layoutSection
 
+            case 2:
+                let itemSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .fractionalHeight(1)
+                )
+                let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+                layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0,
+                                                                   leading: 6,
+                                                                   bottom: 0,
+                                                                   trailing: 10)
+
+                let groupSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(0.33),
+                    heightDimension: .estimated(165)
+                )
+                let layoutGroup = NSCollectionLayoutGroup.horizontal(
+                    layoutSize: groupSize,
+                    subitems: [layoutItem, layoutItem, layoutItem]
+                )
+
+                let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+                layoutSection.contentInsets = NSDirectionalEdgeInsets(top: 10,
+                                                                      leading: 0,
+                                                                      bottom: 13,
+                                                                      trailing: 0)
+                layoutSection.orthogonalScrollingBehavior = .continuous
+
+                let layoutSectionHeaderSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .estimated(27)
+                )
+                let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                    layoutSize: layoutSectionHeaderSize,
+                    elementKind: UICollectionView.elementKindSectionHeader,
+                    alignment: .top
+                )
+                layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
+                layoutSectionHeader.contentInsets = NSDirectionalEdgeInsets.zero
+
+                return layoutSection
+
+            case 3:
+                let itemSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .fractionalHeight(1)
+                )
+                let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+                layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0,
+                                                                   leading: 6,
+                                                                   bottom: 0,
+                                                                   trailing: 10)
+
+                let groupSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(0.33),
+                    heightDimension: .estimated(165)
+                )
+                let layoutGroup = NSCollectionLayoutGroup.horizontal(
+                    layoutSize: groupSize,
+                    subitems: [layoutItem, layoutItem, layoutItem]
+                )
+
+                let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+                layoutSection.contentInsets = NSDirectionalEdgeInsets(top: 10,
+                                                                      leading: 0,
+                                                                      bottom: 13,
+                                                                      trailing: 0)
+                layoutSection.orthogonalScrollingBehavior = .continuous
+
+                let layoutSectionHeaderSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .estimated(27)
+                )
+                let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                    layoutSize: layoutSectionHeaderSize,
+                    elementKind: UICollectionView.elementKindSectionHeader,
+                    alignment: .top
+                )
+                layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
+                layoutSectionHeader.contentInsets = NSDirectionalEdgeInsets.zero
+
+                return layoutSection
+
+            case 4:
+                let itemSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .fractionalHeight(1)
+                )
+                let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
+                layoutItem.contentInsets = NSDirectionalEdgeInsets(top: 0,
+                                                                   leading: 6,
+                                                                   bottom: 0,
+                                                                   trailing: 10)
+
+                let groupSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(0.33),
+                    heightDimension: .estimated(165)
+                )
+                let layoutGroup = NSCollectionLayoutGroup.horizontal(
+                    layoutSize: groupSize,
+                    subitems: [layoutItem, layoutItem, layoutItem]
+                )
+
+                let layoutSection = NSCollectionLayoutSection(group: layoutGroup)
+                layoutSection.contentInsets = NSDirectionalEdgeInsets(top: 10,
+                                                                      leading: 0,
+                                                                      bottom: 13,
+                                                                      trailing: 0)
+                layoutSection.orthogonalScrollingBehavior = .continuous
+
+                let layoutSectionHeaderSize = NSCollectionLayoutSize(
+                    widthDimension: .fractionalWidth(1),
+                    heightDimension: .estimated(27)
+                )
+                let layoutSectionHeader = NSCollectionLayoutBoundarySupplementaryItem(
+                    layoutSize: layoutSectionHeaderSize,
+                    elementKind: UICollectionView.elementKindSectionHeader,
+                    alignment: .top
+                )
+                layoutSection.boundarySupplementaryItems = [layoutSectionHeader]
+                layoutSectionHeader.contentInsets = NSDirectionalEdgeInsets.zero
+
+                return layoutSection
+
             default:
                 let itemSize = NSCollectionLayoutSize(
                     widthDimension: .fractionalWidth(1),
@@ -208,6 +343,33 @@ extension HomeViewController: UICollectionViewDataSource {
 
             return item
 
+        case 2:
+            guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: MixesCell.cellID,
+                                                                for: indexPath) as? MixesCell else {
+                fatalError("Could not cast to MixesCell")
+            }
+            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+
+            return item
+
+        case 3:
+            guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: ArtistsCell.cellID,
+                                                                for: indexPath) as? ArtistsCell else {
+                fatalError("Could not cast to ArtistsCell")
+            }
+            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+
+            return item
+
+        case 4:
+            guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: AlbumsCell.cellID,
+                                                                for: indexPath) as? AlbumsCell else {
+                fatalError("Could not cast to AlbumsCell")
+            }
+            item.configuration(model: CompositionalModel.modelsArray[indexPath.section][indexPath.item])
+
+            return item
+
         default:
             guard let item = collectionView.dequeueReusableCell(withReuseIdentifier: PlaylistsCell.cellID,
                                                                 for: indexPath) as? PlaylistsCell else {
@@ -238,7 +400,34 @@ extension HomeViewController: UICollectionViewDataSource {
                                                                                for: indexPath) as? GeneralHeaderView else {
                 fatalError("Could not cast to GeneralHeaderView")
             }
+            header.title.text = "Pop"
+            return header
+
+        case 2:
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                         withReuseIdentifier: GeneralHeaderView.cellID,
+                                                                               for: indexPath) as? GeneralHeaderView else {
+                fatalError("Could not cast to GeneralHeaderView")
+            }
             header.title.text = "Made For You"
+            return header
+
+        case 3:
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                         withReuseIdentifier: GeneralHeaderView.cellID,
+                                                                               for: indexPath) as? GeneralHeaderView else {
+                fatalError("Could not cast to GeneralHeaderView")
+            }
+            header.title.text = "Best of artists"
+            return header
+
+        case 4:
+            guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
+                                                                         withReuseIdentifier: GeneralHeaderView.cellID,
+                                                                               for: indexPath) as? GeneralHeaderView else {
+                fatalError("Could not cast to GeneralHeaderView")
+            }
+            header.title.text = "Album picks"
             return header
 
         default:

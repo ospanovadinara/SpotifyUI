@@ -56,4 +56,19 @@ enum AppImage: String, AppImageProtocol {
     case mixOne = "mix_one"
     case mixTwo = "mix_two"
     case mixThree = "mix_three"
+
+    case artistOne = "artist_one"
+    case artistTwo = "artist_two"
+    case artistThree = "artist_three"
+    case artistFour = "artist_four"
+    case artistFive = "artist_five"
+    case artistSix = "artist_six"
+    case artistSeven = "artist_seven"
+    case artistEight = "artist_eight"
+
+    case popOne = "pop_one"
+    case popTwo = "pop_two"
+    case popThree = "pop_three"
+    case popFour = "pop_four"
+    case popFive = "pop_five"
 }

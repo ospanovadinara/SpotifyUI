@@ -27,6 +27,9 @@
 		273D30482A9F91D900FA2962 /* MixesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30472A9F91D900FA2962 /* MixesCell.swift */; };
 		273D304A2A9FA72700FA2962 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30492A9FA72700FA2962 /* MainHeaderView.swift */; };
 		273D304C2A9FC3E500FA2962 /* GeneralHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D304B2A9FC3E500FA2962 /* GeneralHeaderView.swift */; };
+		277221702AA07EBF00A509B7 /* ArtistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772216F2AA07EBF00A509B7 /* ArtistsCell.swift */; };
+		277221722AA08A2600A509B7 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221712AA08A2600A509B7 /* AlbumsCell.swift */; };
+		277221742AA08D1700A509B7 /* PopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221732AA08D1700A509B7 /* PopCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		273D30472A9F91D900FA2962 /* MixesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixesCell.swift; sourceTree = "<group>"; };
 		273D30492A9FA72700FA2962 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		273D304B2A9FC3E500FA2962 /* GeneralHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHeaderView.swift; sourceTree = "<group>"; };
+		2772216F2AA07EBF00A509B7 /* ArtistsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsCell.swift; sourceTree = "<group>"; };
+		277221712AA08A2600A509B7 /* AlbumsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
+		277221732AA08D1700A509B7 /* PopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,7 @@
 				270983FF2A9E3CD7003AF729 /* UIResources */,
 				270983F72A9E379B003AF729 /* TabBar */,
 				273D30422A9F7EB200FA2962 /* Home */,
+				277221752AA094F400A509B7 /* Library */,
 			);
 			path = SpotifyUI;
 			sourceTree = "<group>";
@@ -146,14 +153,48 @@
 		273D30422A9F7EB200FA2962 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				2772216C2AA07D1C00A509B7 /* Model */,
+				2772216D2AA07D2E00A509B7 /* Cells */,
+				2772216E2AA07D3B00A509B7 /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2772216C2AA07D1C00A509B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
 				273D30432A9F8AF400FA2962 /* CompositionalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2772216D2AA07D2E00A509B7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 				273D30492A9FA72700FA2962 /* MainHeaderView.swift */,
 				273D30452A9F8F8700FA2962 /* PlaylistsCell.swift */,
 				273D304B2A9FC3E500FA2962 /* GeneralHeaderView.swift */,
+				277221732AA08D1700A509B7 /* PopCell.swift */,
 				273D30472A9F91D900FA2962 /* MixesCell.swift */,
+				2772216F2AA07EBF00A509B7 /* ArtistsCell.swift */,
+				277221712AA08A2600A509B7 /* AlbumsCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2772216E2AA07D3B00A509B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				270983E52A9E3445003AF729 /* HomeViewController.swift */,
 			);
-			path = Home;
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		277221752AA094F400A509B7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,11 +277,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				277221702AA07EBF00A509B7 /* ArtistsCell.swift in Sources */,
 				270984052A9E3D14003AF729 /* AppFont.swift in Sources */,
 				273D30482A9F91D900FA2962 /* MixesCell.swift in Sources */,
 				273D304C2A9FC3E500FA2962 /* GeneralHeaderView.swift in Sources */,
 				270983E62A9E3445003AF729 /* HomeViewController.swift in Sources */,
+				277221722AA08A2600A509B7 /* AlbumsCell.swift in Sources */,
 				270983F92A9E37E8003AF729 /* TabBarController.swift in Sources */,
+				277221742AA08D1700A509B7 /* PopCell.swift in Sources */,
 				273D304A2A9FA72700FA2962 /* MainHeaderView.swift in Sources */,
 				273D30462A9F8F8700FA2962 /* PlaylistsCell.swift in Sources */,
 				270983E22A9E3445003AF729 /* AppDelegate.swift in Sources */,

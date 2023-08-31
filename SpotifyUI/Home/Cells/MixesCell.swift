@@ -21,7 +21,7 @@ class MixesCell: UICollectionViewCell {
 
     private lazy var label: UILabel = {
         let label = UILabel()
-        label.textColor = AppColor.inactive.uiColor
+        label.textColor = AppColor.lightGray.uiColor
         label.font = AppFont.demi.s12()
         label.numberOfLines = 0
         return label
