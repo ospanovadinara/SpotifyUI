@@ -36,6 +36,10 @@
 		277221802AA09D6000A509B7 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772217F2AA09D6000A509B7 /* CategoriesCell.swift */; };
 		277221822AA0A73000A509B7 /* LibraryGeneralHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221812AA0A73000A509B7 /* LibraryGeneralHeader.swift */; };
 		277221842AA0AA5800A509B7 /* RecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221832AA0AA5800A509B7 /* RecentsCell.swift */; };
+		2772218A2AA0D6F000A509B7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221892AA0D6F000A509B7 /* SearchViewController.swift */; };
+		2772218C2AA0D7FE00A509B7 /* SearchCompositionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772218B2AA0D7FE00A509B7 /* SearchCompositionalModel.swift */; };
+		2772218E2AA0D9A200A509B7 /* SearchHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772218D2AA0D9A200A509B7 /* SearchHeaderView.swift */; };
+		277221902AA0DD1C00A509B7 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772218F2AA0DD1C00A509B7 /* SearchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +73,10 @@
 		2772217F2AA09D6000A509B7 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		277221812AA0A73000A509B7 /* LibraryGeneralHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryGeneralHeader.swift; sourceTree = "<group>"; };
 		277221832AA0AA5800A509B7 /* RecentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsCell.swift; sourceTree = "<group>"; };
+		277221892AA0D6F000A509B7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2772218B2AA0D7FE00A509B7 /* SearchCompositionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCompositionalModel.swift; sourceTree = "<group>"; };
+		2772218D2AA0D9A200A509B7 /* SearchHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeaderView.swift; sourceTree = "<group>"; };
+		2772218F2AA0DD1C00A509B7 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +115,7 @@
 				270983FF2A9E3CD7003AF729 /* UIResources */,
 				270983F72A9E379B003AF729 /* TabBar */,
 				273D30422A9F7EB200FA2962 /* Home */,
+				277221852AA0D6AF00A509B7 /* Search */,
 				277221752AA094F400A509B7 /* Library */,
 			);
 			path = SpotifyUI;
@@ -239,6 +248,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		277221852AA0D6AF00A509B7 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				277221872AA0D6CA00A509B7 /* Model */,
+				277221862AA0D6C300A509B7 /* Cells */,
+				277221882AA0D6D400A509B7 /* Controller */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		277221862AA0D6C300A509B7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2772218D2AA0D9A200A509B7 /* SearchHeaderView.swift */,
+				2772218F2AA0DD1C00A509B7 /* SearchCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		277221872AA0D6CA00A509B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2772218B2AA0D7FE00A509B7 /* SearchCompositionalModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		277221882AA0D6D400A509B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				277221892AA0D6F000A509B7 /* SearchViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,6 +366,7 @@
 				277221702AA07EBF00A509B7 /* ArtistsCell.swift in Sources */,
 				270984052A9E3D14003AF729 /* AppFont.swift in Sources */,
 				273D30482A9F91D900FA2962 /* MixesCell.swift in Sources */,
+				2772218C2AA0D7FE00A509B7 /* SearchCompositionalModel.swift in Sources */,
 				273D304C2A9FC3E500FA2962 /* GeneralHeaderView.swift in Sources */,
 				2772217A2AA095F700A509B7 /* LibraryHeaderView.swift in Sources */,
 				277221802AA09D6000A509B7 /* CategoriesCell.swift in Sources */,
@@ -330,8 +375,11 @@
 				270983F92A9E37E8003AF729 /* TabBarController.swift in Sources */,
 				277221742AA08D1700A509B7 /* PopCell.swift in Sources */,
 				277221782AA0959C00A509B7 /* LibraryViewController.swift in Sources */,
+				2772218E2AA0D9A200A509B7 /* SearchHeaderView.swift in Sources */,
+				277221902AA0DD1C00A509B7 /* SearchCell.swift in Sources */,
 				273D304A2A9FA72700FA2962 /* MainHeaderView.swift in Sources */,
 				273D30462A9F8F8700FA2962 /* PlaylistsCell.swift in Sources */,
+				2772218A2AA0D6F000A509B7 /* SearchViewController.swift in Sources */,
 				270983E22A9E3445003AF729 /* AppDelegate.swift in Sources */,
 				277221822AA0A73000A509B7 /* LibraryGeneralHeader.swift in Sources */,
 				270984032A9E3D09003AF729 /* AppColor.swift in Sources */,

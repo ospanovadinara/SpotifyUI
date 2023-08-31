@@ -35,7 +35,7 @@ class TabBarController: UITabBarController {
         view.backgroundColor = AppColor.black.uiColor
 
         let home = UINavigationController(rootViewController: HomeViewController())
-        let search = UINavigationController(rootViewController: HomeViewController())
+        let search = UINavigationController(rootViewController: SearchViewController())
         let library = UINavigationController(rootViewController: LibraryViewController())
 
         home.tabBarItem = setTabItem(for: .home)

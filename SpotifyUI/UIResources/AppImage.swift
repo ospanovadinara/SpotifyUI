@@ -80,4 +80,7 @@ enum AppImage: String, AppImageProtocol {
     case groupButton = "group_button"
     case recentsOne = "recents_one"
     case recentsTwo = "recents_two"
+
+    case searchAlbum = "search_album"
+    case photoButton = "photo_button"
 }
