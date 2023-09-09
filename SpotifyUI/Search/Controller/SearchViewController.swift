@@ -59,7 +59,7 @@ class SearchViewController: UIViewController {
             switch section {
             case 0:
                 let itemSize = NSCollectionLayoutSize(
-                    widthDimension: .fractionalWidth(1),
+                    widthDimension: .fractionalWidth(0.5),
                     heightDimension: .fractionalHeight(1)
                 )
                 let layoutItem = NSCollectionLayoutItem(layoutSize: itemSize)
@@ -69,10 +69,10 @@ class SearchViewController: UIViewController {
                                                                    trailing: 8)
 
                 let groupSize = NSCollectionLayoutSize(
-                    widthDimension: .fractionalWidth(0.5),
+                    widthDimension: .fractionalWidth(1),
                     heightDimension: .estimated(110)
                 )
-                let layoutGroup = NSCollectionLayoutGroup.vertical(
+                let layoutGroup = NSCollectionLayoutGroup.horizontal(
                     layoutSize: groupSize,
                     subitems: [layoutItem, layoutItem]
                 )

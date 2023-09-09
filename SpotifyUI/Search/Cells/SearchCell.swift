@@ -62,6 +62,7 @@ class SearchCell: UICollectionViewCell {
         }
 
         imageView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(28)
             make.right.equalToSuperview()
             make.bottom.equalToSuperview().offset(-5)
             make.width.equalTo(imageView.snp.height)
