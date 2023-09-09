@@ -109,6 +109,13 @@ class LibraryHeaderView: UICollectionReusableView {
     // MARK: - Actions
     @objc func profileButtonTapped(_ sender: UIButton) {
         print("Profile Button Did Tap")
+        let profileViewController = ProfileViewController()
+        let navigationController = UINavigationController(rootViewController: profileViewController)
+        if let sceneDelegate = UIApplication.shared.connectedScenes
+            .compactMap({ $0.delegate as? SceneDelegate })
+            .first {
+            sceneDelegate.window?.rootViewController = navigationController
+        }
     }
 
     @objc func searchButtonTapped(_ sender: UIButton) {
