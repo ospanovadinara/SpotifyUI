@@ -83,4 +83,20 @@ enum AppImage: String, AppImageProtocol {
 
     case searchAlbum = "search_album"
     case photoButton = "photo_button"
+    case searchOne = "search_one"
+    case searchTwo = "search_two"
+    case searchThree = "search_three"
+    case searchFour = "seach_four"
+    case searchFive = "search_five"
+    case searchEmpty = "search_empty_album"
+    case searchSix = "search_six"
+    case searchSeven = "search_seven"
+    case searchEight = "search_eight"
+    case searchNine = "search_nine"
+    case searchTen = "search_ten"
+    case searchEleven = "search_eleven"
+
+    case rightArrow = "right_arrow"
+    case avatar
+    case leftArrow = "left_arrow"
 }
