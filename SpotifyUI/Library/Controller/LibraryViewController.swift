@@ -45,14 +45,8 @@ class LibraryViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupNavigationController()
         setupViews()
         setupConstraints()
-    }
-
-    // MARK: - Setup Navigation Controller
-    func setupNavigationController() {
-        navigationController?.navigationBar.isHidden = true
     }
 
     // MARK: - Setup Views

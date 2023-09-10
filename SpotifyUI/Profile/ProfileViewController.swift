@@ -71,7 +71,7 @@ final class ProfileViewController: UIViewController {
 
     // MARK: - Actions
     @objc func pressBackButton() {
-        self.navigationController?.pushViewController(LibraryViewController(), animated: true)
+
     }
 }
 
