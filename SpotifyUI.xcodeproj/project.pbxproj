@@ -27,6 +27,7 @@
 		273D30482A9F91D900FA2962 /* MixesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30472A9F91D900FA2962 /* MixesCell.swift */; };
 		273D304A2A9FA72700FA2962 /* MainHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30492A9FA72700FA2962 /* MainHeaderView.swift */; };
 		273D304C2A9FC3E500FA2962 /* GeneralHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D304B2A9FC3E500FA2962 /* GeneralHeaderView.swift */; };
+		2762F8C02AADEFF200876B66 /* ScreensImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 2762F8BF2AADEFF200876B66 /* ScreensImage.png */; };
 		277221702AA07EBF00A509B7 /* ArtistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2772216F2AA07EBF00A509B7 /* ArtistsCell.swift */; };
 		277221722AA08A2600A509B7 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221712AA08A2600A509B7 /* AlbumsCell.swift */; };
 		277221742AA08D1700A509B7 /* PopCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277221732AA08D1700A509B7 /* PopCell.swift */; };
@@ -70,6 +71,7 @@
 		273D30472A9F91D900FA2962 /* MixesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixesCell.swift; sourceTree = "<group>"; };
 		273D30492A9FA72700FA2962 /* MainHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHeaderView.swift; sourceTree = "<group>"; };
 		273D304B2A9FC3E500FA2962 /* GeneralHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralHeaderView.swift; sourceTree = "<group>"; };
+		2762F8BF2AADEFF200876B66 /* ScreensImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ScreensImage.png; sourceTree = "<group>"; };
 		2772216F2AA07EBF00A509B7 /* ArtistsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistsCell.swift; sourceTree = "<group>"; };
 		277221712AA08A2600A509B7 /* AlbumsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
 		277221732AA08D1700A509B7 /* PopCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopCell.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		270983D52A9E3445003AF729 = {
 			isa = PBXGroup;
 			children = (
+				2762F8BE2AADEFC000876B66 /* ScreensImage */,
 				270983E02A9E3445003AF729 /* SpotifyUI */,
 				270983DF2A9E3445003AF729 /* Products */,
 			);
@@ -193,6 +196,14 @@
 				2772216E2AA07D3B00A509B7 /* Controller */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		2762F8BE2AADEFC000876B66 /* ScreensImage */ = {
+			isa = PBXGroup;
+			children = (
+				2762F8BF2AADEFF200876B66 /* ScreensImage.png */,
+			);
+			path = ScreensImage;
 			sourceTree = "<group>";
 		};
 		2772216C2AA07D1C00A509B7 /* Model */ = {
@@ -382,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				270983EE2A9E3446003AF729 /* LaunchScreen.storyboard in Resources */,
+				2762F8C02AADEFF200876B66 /* ScreensImage.png in Resources */,
 				2709840D2A9E4088003AF729 /* Avenirnextcyr-Bold.ttf in Resources */,
 				2709840E2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf in Resources */,
 				2709840B2A9E4088003AF729 /* Avenirnextcyr-Demi.ttf in Resources */,
