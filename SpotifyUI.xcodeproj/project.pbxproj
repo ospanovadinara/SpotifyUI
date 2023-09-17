@@ -22,6 +22,8 @@
 		2709840C2A9E4088003AF729 /* Avenirnextcyr-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270984082A9E4088003AF729 /* Avenirnextcyr-Regular.ttf */; };
 		2709840D2A9E4088003AF729 /* Avenirnextcyr-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 270984092A9E4088003AF729 /* Avenirnextcyr-Bold.ttf */; };
 		2709840E2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2709840A2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf */; };
+		27206AF22AB750CE00A59FBC /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27206AF12AB750CE00A59FBC /* AuthManager.swift */; };
+		27206AF42AB760B400A59FBC /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27206AF32AB760B400A59FBC /* AuthService.swift */; };
 		273D30442A9F8AF400FA2962 /* HomeCompositionalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30432A9F8AF400FA2962 /* HomeCompositionalModel.swift */; };
 		273D30462A9F8F8700FA2962 /* PlaylistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30452A9F8F8700FA2962 /* PlaylistsCell.swift */; };
 		273D30482A9F91D900FA2962 /* MixesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273D30472A9F91D900FA2962 /* MixesCell.swift */; };
@@ -66,6 +68,8 @@
 		270984082A9E4088003AF729 /* Avenirnextcyr-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Regular.ttf"; sourceTree = "<group>"; };
 		270984092A9E4088003AF729 /* Avenirnextcyr-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Bold.ttf"; sourceTree = "<group>"; };
 		2709840A2A9E4088003AF729 /* Avenirnextcyr-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Avenirnextcyr-Medium.ttf"; sourceTree = "<group>"; };
+		27206AF12AB750CE00A59FBC /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		27206AF32AB760B400A59FBC /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		273D30432A9F8AF400FA2962 /* HomeCompositionalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCompositionalModel.swift; sourceTree = "<group>"; };
 		273D30452A9F8F8700FA2962 /* PlaylistsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistsCell.swift; sourceTree = "<group>"; };
 		273D30472A9F91D900FA2962 /* MixesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixesCell.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 				270983F52A9E347E003AF729 /* Application */,
 				270983F62A9E3489003AF729 /* SupportingFiles */,
 				270983FF2A9E3CD7003AF729 /* UIResources */,
+				27206AF02AB7509800A59FBC /* Auth */,
 				270983F72A9E379B003AF729 /* TabBar */,
 				273D30422A9F7EB200FA2962 /* Home */,
 				277221852AA0D6AF00A509B7 /* Search */,
@@ -186,6 +191,15 @@
 				270984082A9E4088003AF729 /* Avenirnextcyr-Regular.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		27206AF02AB7509800A59FBC /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				27206AF12AB750CE00A59FBC /* AuthManager.swift */,
+				27206AF32AB760B400A59FBC /* AuthService.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		273D30422A9F7EB200FA2962 /* Home */ = {
@@ -428,6 +442,7 @@
 				27CB18F62AACC824009A80AC /* ProfileModel.swift in Sources */,
 				27F41A062AAB211100B964C0 /* ProfileHeaderView.swift in Sources */,
 				273D304A2A9FA72700FA2962 /* MainHeaderView.swift in Sources */,
+				27206AF22AB750CE00A59FBC /* AuthManager.swift in Sources */,
 				273D30462A9F8F8700FA2962 /* PlaylistsCell.swift in Sources */,
 				2772218A2AA0D6F000A509B7 /* SearchViewController.swift in Sources */,
 				27F41A042AAB104D00B964C0 /* ProfileViewController.swift in Sources */,
@@ -439,6 +454,7 @@
 				277221842AA0AA5800A509B7 /* RecentsCell.swift in Sources */,
 				273D30442A9F8AF400FA2962 /* HomeCompositionalModel.swift in Sources */,
 				2772217E2AA09C4000A509B7 /* LibraryCompositionalModel.swift in Sources */,
+				27206AF42AB760B400A59FBC /* AuthService.swift in Sources */,
 				27CB18FC2AACCBAB009A80AC /* RegularCell.swift in Sources */,
 				270984012A9E3CF8003AF729 /* AppImage.swift in Sources */,
 			);
